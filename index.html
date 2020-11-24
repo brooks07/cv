@@ -61,53 +61,19 @@
     </tr>
 </Table>
 <section role="search" data-ss360="true">
-    <input id="searchBox" type="search" />
-    <button id="searchButton"/>
- </section>
- <input id="searchBox" type="search" />
-<input type="submit" id="searchButton"/>    
-<input id="searchBox" type="search" />
+	<input type="search" id="searchBox">
+	<button id="searchButton"></button>
+</section>
 <hr>
 <a href="contact.html">Contact me</a>
 <script type="text/javascript">
-    window.ss360Config = {
-        suggestions: {
-            showImages: false
-        },
-        style: {
-            themeColor: "#FF0090",
-            accentColor: "#FFFF00",
-            searchBox: {
-                text: {
-                    color: "#333333",
-                    size: "14px"
-                },
-                background: {
-                    color: "#ffffff"
-                },
-                border: {
-                    color: "#dddddd",
-                    radius: "0px"
-                },
-                padding: "8px",
-                icon: {
-                    image: "magnifier",
-                    color: "#666666"
-                }
-            },
-            loaderType: "square"
-        },
-        tracking: {
-            providers: []
-        },
-        siteId: "d",
-        showErrors: false
-    };
-    
-    var e=document.createElement("script");
-    e.async=!0;
-    e.src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js";
-    document.getElementsByTagName("body")[0].appendChild(e);
-    </script>
+var ss360Config = {
+    siteId: "brooks07.github.io",
+    searchBox: {
+        selector: "#searchBox"
+    }
+}
+</script>
+<script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script>
 </body>
 </html>
